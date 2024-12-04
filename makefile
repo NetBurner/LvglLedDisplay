@@ -3,7 +3,7 @@
 #NB_COPYRIGHT#
 
 
-NAME    = ForrestDisplay
+NAME    = DisplayApplication
 
 NBINCLUDE += -I"lvgl/src"
 
@@ -17,10 +17,9 @@ C_SRC		+= \
 			src/ui/screens.c \
 			src/ui/styles.c \
 			src/ui/ui.c \
-			src/ui/ui_image_map.c \
-			src/ui/ui_image_globe.c
+			src/ui/ui_image_map.c
 
-XTRALIB		+= $(OBJDIR)/release/libLVGL.a
+XTRALIB		+= $(OBJDIR)/release/liblvgl.a
 
 CREATEDTARGS += obj/htmldata.cpp
 CPP_SRC += obj/htmldata.cpp
